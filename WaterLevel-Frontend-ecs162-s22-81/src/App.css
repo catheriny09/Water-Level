@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.container{
+  font-family: 'Inter', sans-serif;
+  line-height: normal;
+}
+
+header{
+  background-color: rgb(66,145,162);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 0.75em 0;
+  margin-bottom: 2.5em;
+}
+
+section {
+  font-weight: 400;
+  
+}
+
+#first{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+}
+button {
+  color: white;
+  background-color: rgb(66,145,162);
+  width: 150px;
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#less {
+  display: none;
+}
+
+#chart-container {
+  width: 80%;
+  margin-top: 4em;
+}
+
+.hide {
+  display: none;
+}
+
+.imgDiv{
+   width: 80%;
+   max-width: 350px;
+}
+.textDiv{
+   width: 80%;
+   max-width: 350px;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a{
+  color: rgb(0, 135, 255);
+  text-decoration: none;
+}
+
+figcaption{
+  font-weight: 400;
+  font-size: 12px;
+  width: 100%;
+  margin: 0.5em 0 2em;
+  
+}
+
+.bodyText{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0.7em;
+}
+
+/***** Style for Part After Button *************/
+#second{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 4em;
+}
+
+.textAndCalendar{
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#monthPicker {
+  color: rgb(66,145,162);
+  font-weight: bold;
+  
+}
+
+.monthYearBox{
+  margin-top: 1em;
+  background-color: white;
+  border: 2px solid rgb(220,220,220);
+  color: rgb(100,100,100);
+	width: 275px;
+  padding-left: 1em;
+  padding-top: 0.6em;
+  height: 30px;
+}
+
+div#chart-container {
+  position: relative;
+  height: 17.5vh;
+  width: 75vw;
+}
+
+@media screen and (min-width: 525px) { 
+  header{
+    dipslay: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.25em 0em;
+  }
+
+  #blank{
+    width: 6px;
+  }
+  .imgDiv{
+    max-width: 570px;
+  }
+  .textDiv{
+   max-width: 570px;
+  }
+  
+  .textAndCalendar{
+   max-width: 570px;
+  }
+
+  #monthDiv {
+    margin-bottom: 5em;
+  }
+
+  div#chart-container {
+  position: relative;
+  height: 27.5vh;
+  width: 60vw;
+}
+  
+}
+
+@media screen and (min-width: 975px){
+ #first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 6em;
+  margin-left: 6em;
+  margin-bottom: 0.5em;
+  justify-content: space-evenly;
+ }
+
+#second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 0;
+    justify-content: space-evenly;
+    
+  }
+  
+ header {
+   justify-content: flex-start;
+   padding-left: 4.5em;
+   margin-bottom: 2em;
+ 
+ }
+
+  #chart-container {
+    margin-top: 0em;
+    margin-right: 5em;
+  }
+  
+ .imgDiv{
+   max-width: 400px;
+   margin-left: 1.25em;
+  
+ }
+ .textDiv{
+   max-width: 780px;
+   padding-bottom: 3.5em;
+   margin-right: 1.25em;
+ }
+
+  .textAndCalendar{
+    padding-bottom: 12em;
+  }
+
+  div#chart-container {
+    position: relative;
+    height: 35vh;
+    width: 35vw;
+   
+  }
+
+  main{
+    padding-bottom: 6em;
+    margin-bottom: 1em;
+   
+  }
+}
